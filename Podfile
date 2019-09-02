@@ -13,6 +13,7 @@ target 'alarmGO' do
   # https://firebase.google.com/docs/ios/setup#available-pods
 
   pod 'Firebase/Firestore'
+  pod 'FontAwesome.swift'
 
 
 end

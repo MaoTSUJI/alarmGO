@@ -55,6 +55,7 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
+  - FontAwesome.swift (1.8.1)
   - GoogleAppMeasurement (6.1.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -110,6 +111,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Firestore
+  - FontAwesome.swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -122,6 +124,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnosticsInterop
     - FirebaseFirestore
     - FirebaseInstanceID
+    - FontAwesome.swift
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
@@ -142,6 +145,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
   FirebaseFirestore: d65bd28e77a8cdc045be6353c6e1e146efdf92dc
   FirebaseInstanceID: 8b42755db950682e7de0d167bc6fb26a57b244af
+  FontAwesome.swift: 6f55c8ed22a30ab6a8ca94033473161f678dcd4b
   GoogleAppMeasurement: 47285fa897e5a125df56b9ef8750a1d81e4598a8
   GoogleDataTransport: ffbadce4ab93c88fb9dd8e6366c47bfcb4a32193
   GoogleDataTransportCCTSupport: 3451e7d8ba19093e533362a6d78d6d9014c6a037
@@ -152,6 +156,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
 
-PODFILE CHECKSUM: a11365acf2bdf46287eebb6452f2dc70884e79bb
+PODFILE CHECKSUM: 26fe0af0c800937ce6268716ff7b0fe7af805f0a
 
 COCOAPODS: 1.7.5
