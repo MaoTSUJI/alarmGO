@@ -11,15 +11,22 @@ import FontAwesome_swift
 
 class TabBarViewController: UITabBarController {
 
+    let itemLabels = ["アラーム", "マップ"]
+    let iconNames:[FontAwesome] = [.clock, .mapMarkedAlt]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let tabItems = self.tabBar.items as [UITabBarItem]?
+        
         // フォント設定
-        self.tabBar.items![0].setFAIcon(icon: .FAAddressBook, size: nil, textColor: .white, backgroundColor: .black, selectedTextColor: .white, selectedBackgroundColor: .black)
-        self.tabBar.items![1].setFAIcon(icon: .FAAddressCard, size: nil, textColor: .white, backgroundColor: .black, selectedTextColor: .white, selectedBackgroundColor: .black)
+        for index in 0..<itemLabels.count {
+            let currentItem = tabItems?[index] as! UITabBarItem
+            currentItem.title = itemLabels[index]
+            currentItem.image = UIImage.fontAwesomeIcon(name: iconNames[index], style: .solid, textColor: .black, size: CGSize(width: 30, height: 30))
         
+        }
         
-
         
     }
     
