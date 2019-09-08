@@ -10,21 +10,33 @@ import UIKit
 
 class SetAlarmViewController: UITabBarController {
 
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var placeTextField: UITextField!
+    
+    var alarmTime:Date = Date()
+    var place = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+    }
+
+    
+    @IBAction func didSetTime(_ sender: UIDatePicker) {
+        
+        // DataPickerが変更された時の処理
+        alarmTime = sender.date
+        print("alarmTime: \(alarmTime)")
+        
+    }
+    
+    @IBAction func didClickSave(_ sender: UIButton) {
+    
+    
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
