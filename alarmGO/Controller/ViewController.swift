@@ -23,6 +23,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 次の画面のBackボタンを「戻る」に変更
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+            title:  "戻る",
+            style:  .plain,
+            target: nil,
+            action: nil
+        )
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -30,9 +38,27 @@ class ViewController: UIViewController {
 
     @IBAction func didClickNewCreate(_ sender: UIButton) {
     
-        performSegue(withIdentifier: "toSetAlarm", sender: nil)
-    
+        let inputValue = "create"
+        performSegue(withIdentifier: "toSetAlarm", sender: inputValue)
+        
     }
+    
+    @IBAction func didClickEdit(_ sender: UIButton) {
+
+        let inputValue = "edit"
+        performSegue(withIdentifier: "toSetAlarm", sender: inputValue)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toSetAlarm" {
+            let nextVC = segue.destination as! SetAlarmViewController
+            nextVC.buttonType = sender as! String
+        }
+        
+    }
+    
     
 }
 

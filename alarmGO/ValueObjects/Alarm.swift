@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Alerm {
+struct Alarm {
     
     let documentId: String
     let time: String
